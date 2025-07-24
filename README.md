@@ -1,18 +1,14 @@
 <h1>I ran 1 Million Free Aim turns in a simulator to find out how many shots you really get in Expedition 33.</h1>
 
 <h2>Purpose</h2>
-I built a simulation in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns.
+I built a simulation in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns. 
+The goal of this simulation is to model the complex web of effects — Energy Master, Mark, Burn, Rush, and Powerful — and determine:
 
 <ul>
-🎯 The goal of this simulation is to model the complex web of effects — Energy Master, Mark, Burn, Rush, and Powerful — and determine:
-
 <li>✅ The average number of shots per turn </li>
-
-🔢 The probability distribution of shot counts
-
-🔥 How often high-shot turns (e.g. 30+) occur
-
-🧪 How effects like Energy Master skew outcomes
+<li>🔢 The probability distribution of shot counts</li>
+<li>🔥 How often high-shot turns (e.g. 30+) occur</li>
+<li>🧪 How effects like Energy Master skew outcomes</li>
 </ul>
 🛠️ How It Works
 Each simulation:
