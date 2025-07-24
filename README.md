@@ -1,8 +1,18 @@
-# I ran 1,000,000 Free Aim turns in a simulator to find out how many shots you really get in Expedition 33.
+# I ran 1 Million Free Aim turns in a simulator to find out how many shots you really get in Expedition 33.
 
-Ever wonder how many shots the Free Aim build really gets on average?
-
+Purpose:
 I built a simulation in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns.
+
+🎯 The goal of this simulation is to model the complex web of effects — Energised, Mark, Burn, Rush, and Powerful — and determine:
+
+✅ The average number of shots per turn
+
+🔢 The probability distribution of shot counts
+
+🔥 How often high-shot turns (e.g. 20+) occur
+
+🧪 How effects like Energy Master skew outcomes
+
 
 Key Takeaway: The average number of shots for a sample size converges towards 22.28 shots.
 
