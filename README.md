@@ -1,19 +1,20 @@
-<h1>I ran 1 Million Free Aim turns in a simulator to find out how many shots you really get in Expedition 33.</h1>
+<h1>I ran 1 Million Free Aim turns in a simulator to find out how many shots you really can get in Expedition 33.</h1>
 
 <h2>Purpose</h2>
-I built a simulation in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns. 
-The goal of this simulation is to model the complex web of effects — Energy Master, Mark, Burn, Rush, and Powerful — and determine:
+I've seen some debate online about how many free aim shots are possible in an average turn. To settle the debate once and for all, I built an algorithm in JavaScript that replicates every interaction — Energised, Marking, Rush, etc —. Then I ran it over 1 million turns. 
+
+The goal of this simulation is to model the complex web of picto effects — Energy Master, Mark, Burn, Rush — and determine:
 
 <ul>
 <li>✅ The average number of shots per turn </li>
 <li>🔢 The probability distribution of shot counts</li>
 <li>🔥 How often high-shot turns (e.g. 30+) occur</li>
-<li>🧪 How effects like Energy Master skew outcomes</li>
+<li>🧪 Whicch pictos have the largest impact on shot counts.</li>
 </ul>
 
 <h2>Key Findings</h2>
 <ul>
-  <li>The average number of shots for a sample size converges towards 23.11 shots.</li>
+  <li>The average number of shots for a sample size of 1 million turns is 23.11 shots.</li>
   <li>There's only a #% chance of getting 30 shots or higher.</li>
   <li>The highest number of shots I saw was 80, with a 0.0001% chance of occuring.</li>
   <li>Certain pictos like Beneficial Contamination aren't as impactful as they seem like they'd be because they usually trigger while you're AP is high and would have already maxed out at 9.</li>
