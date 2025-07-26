@@ -80,7 +80,7 @@ Sample Size: 1000000. Average shots: 23.101594
 <h2>📦 Files</h2>
 <ul>
   <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/FreeAimShot.js">FreeAimShot.js</a> – Core simulation logic</li>
-  <li>README.md – You're here!</li>
+  <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/README.md">README.md</a> – You're here!</li>
   <li>chart.png – Distribution visualization</li>
 </ul>
 
