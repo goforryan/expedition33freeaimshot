@@ -14,16 +14,18 @@ The goal of this simulation is to model the complex web of picto effects — Ene
 
 <h2>Key Findings</h2>
 <ul>
-  <li>The average number of shots for a sample size of 1 million turns is 23.1 shots.</li>
-  <li>There's only a #% chance of getting 30 shots or higher.</li>
+  <li>The average number of shots per turn is 23.1.</li>
+  <li>There's only a 13.1951% chance of getting 30 shots or higher.</li>
+  <li>There's only a 0.0006% chance of getting only 9 shots from no effects triggering.
   <li>The highest number of shots I saw was 80, with a 0.0001% chance of occuring.</li>
-  <li>Certain pictos like Beneficial Contamination aren't as impactful as they seem like they'd be because they usually trigger while you're AP is high and would have already maxed out at 9.</li>
-  <li>The more pictos you add, the less impactful each new one becomes. Energy Master and Energising Shots are doing most of the work.</li>
+  <li>The most impactful pictos were  Energising Shots and Energy Master. Disabling them led to a 35.1% and 20% decrease in average shot count, respectively.</li>
+  <li>Beneficial Contamination is the least impactful because it usually triggers while you're AP is high and another boost was already going to max out your AP.</li>
+  <li>The more pictos you add, the less impactful each new one becomes.</li>
 </ul>
 
 <h2>🛠️ How It Works</h2>
 
-Each simulation:
+The program:
 <ul>
 <li>Starts with 9 AP.</li>
 <li>Simulates one turn of shooting using the following pictos:</li>
@@ -42,9 +44,10 @@ Each simulation:
     <li>Energising Rush: Give 2 AP on applying Rush.</li>
     <li>Protecting Shots: 20% chance to gain Shell on Free Aim shot.</li>
     <li>Energising Shell: Give 2 AP on applying Shell.</li>
-  </ul>  
-<li>Caps AP at 9 and loops until AP is gone.
-  
+    <li>Caps AP at 9 and loops until AP is gone.</li>
+  </ul>
+  <li>Runs the simulation based on the inputed target sample size, adding each one to an array and averaging them together.</li>
+  <li>Charts the frequency distribution for the number of shots.</li>  
 </ul>
 
 <h2>📈 Example Output</h2>
@@ -91,8 +94,6 @@ Sample Size: 1000000. Average shots: 23.101594
 
 
 
-
-One thing I'm unsure of is whether the Energising Powerful, Rush and Shell pictos can trigger multiple times per turn.
 
 I’m wondering — are there any other pictos I missed that could make the "machine gun" free aim build better and increase the average number of shots even higher?
 
