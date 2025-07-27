@@ -83,8 +83,8 @@ Sample Size: 1000000. Average shots: 23.101594
 
 <h2>Assumptions</h2>
 <ul>
-  <li>Targeting one enemy that doesn't die before you finish your turn. If you could target 2 enemies and kill one, Dead Energy would come into play.</li>
-  <li>Target does not break during this turn. If a tareget breaks it is possible to trigger Energising Break and Energising Stun. However, modeling this would require whole builds and specific enemies.</li>
+  <li>Targets one enemy that doesn't die before you finish your turn. If you could target 2 enemies and kill one, Dead Energy would come into play.</li>
+  <li>Enemy does not break during this turn. If a tareget breaks it is possible to trigger Energising Break and Energising Stun. However, modeling this would require whole builds and specific enemies.</li>
 </ul>
   
 <h2>📦 Files</h2>
