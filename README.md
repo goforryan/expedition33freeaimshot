@@ -15,7 +15,7 @@ The goal of this simulation is to model the complex web of picto effects — Ene
 <h2>Key Findings</h2>
 <ul>
   <li>The average number of shots per turn is 23.1.</li>
-  <li>There's only a 13.1951% chance of getting 30 shots or higher.</li>
+  <li>There's only a 13.2% chance of getting 30 shots or higher.</li>
   <li>There's only a 0.0006% chance of getting only 9 shots from no effects triggering.
   <li>The highest number of shots I saw was 80, with a 0.0001% chance of occuring.</li>
   <li>The most impactful pictos were  Energising Shots and Energy Master. Disabling them led to a 35.1% and 20% decrease in average shot count, respectively.</li>
