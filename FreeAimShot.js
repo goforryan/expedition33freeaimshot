@@ -148,6 +148,7 @@ function MachineGun() {
 }
 
 //Objective 2: Using the algorithm, calculate the average number of shots given multiple different sample sizes.
+//Calculate Averages Based on the same array.
 
 function runSimulation(sampleSize) {
     const results = [];
@@ -155,15 +156,40 @@ function runSimulation(sampleSize) {
     //Creates Array of Outputs
     for (let i = 0; i < sampleSize; i++) {
         results.push(MachineGun());
+    
     }
-    //Averages the array together
-    const total = results.reduce((acc, val) => acc + val, 0);
-    const average = total / sampleSize;
-    console.log(`Sample Size: ${sampleSize}. Average shots: ${average}`);
     return results;
 }
 
-//Objective 3: Calculate the likelhood of a given number of shots occuring based on the sample data.
+const sampleSize = 1000000;
+const results = runSimulation(sampleSize);
+
+function averageOutputsByLength(sampleSize2){
+    let sum = 0
+
+    for (let i = 0; i<sampleSize2; i++){
+        sum = sum + results[i];
+        
+        /*
+        //Averages the array together
+        const total = results.reduce((acc, val) => acc + val, 0);
+        const average = total / sampleSize;
+        */
+        
+    }
+    let average = sum/sampleSize2
+    console.log(`Sample Size: ${sampleSize2}. Average shots: ${average}`);
+}
+
+averageOutputsByLength(10); //Sample Size of 10
+averageOutputsByLength(100); //Sample Size of 100
+averageOutputsByLength(1000); //Sample Size of 1,000
+averageOutputsByLength(10000); //Sample Size of 10,000
+averageOutputsByLength(100000); //Sample Size of 100,000
+averageOutputsByLength(1000000); //Sample Size of 1,000,000
+
+
+//Objective 3: Calculate the probability distribution of a given number of shots occuring based on the sample data.
 function calculateProbability(results) {
 
     //Create Frequency Object
@@ -182,25 +208,22 @@ function calculateProbability(results) {
     for (let shots in probabilities) {
         console.log(`${shots}: ${probabilities[shots]}`)
     }
+
+    return probabilities; 
 }
 
-//Generate Data
-const sampleSizeTen = 10;
-runSimulation(sampleSizeTen);
+    /* Print as an Object
+    const probabilityDistribution = calculateProbability(results);
+    console.log(probabilityDistribution);*/
 
-const sampleSizeHundred = 100;
-runSimulation(sampleSizeHundred);
+//Probability Distribution Output
+console.log("Probability Distribution for Sample Size of 1 Million:")
+//calculateProbability(results);
+const probabilityDistribution = calculateProbability(results);
 
-const sampleSizeThousand = 1000;
-runSimulation(sampleSizeThousand);
+//Objective 4: Probability Distribution Data Visualization
+const probabilityLabels = Object.keys(probabilityDistribution);
+const probabilityData = Object.values(probabilityDistribution);
+console.log(probabilityLabels);
+console.log(probabilityData);
 
-const sampleSizeTenThousand = 10000;
-runSimulation(sampleSizeTenThousand);
-
-const sampleSizeHundredThousand = 100000;
-runSimulation(sampleSizeHundredThousand);
-
-const sampleSizeMillion = 1000000;
-const results = runSimulation(sampleSizeMillion);
-console.log("Shot Distribution for Sample Size of 1 Million:")
-calculateProbability(results);
