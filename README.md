@@ -9,7 +9,7 @@ The goal of this simulation is to model the complex web of picto effects — Ene
 <li>✅ The average number of shots per turn </li>
 <li>🔢 The probability distribution of shot counts</li>
 <li>🔥 How often high-shot turns (e.g. 30+) occur</li>
-<li>🧪 Whicch pictos have the largest impact on shot counts.</li>
+<li>🧪 Which pictos have the largest impact on shot counts.</li>
 </ul>
 
 <h2>Key Findings</h2>
