@@ -12,19 +12,15 @@
         <canvas id="myChart" width="600" height="400"></canvas>
         
         <script>
-        // Arrays from your simulation output
-        const labels = ['5', '6', '7', '8', '9', '10'];  // Replace with Object.keys(probabilityDistribution)
-        const data = [0.1, 0.15, 0.3, 0.25, 0.1, 0.1];   // Replace with Object.values(probabilityDistribution)
-        
         const ctx = document.getElementById('myChart').getContext('2d');
         
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: labels,
+                labels: probabilityLabels,
                 datasets: [{
                     label: 'Probability',
-                    data: data,
+                    data: probabilityData,
                     backgroundColor: 'rgba(54, 162, 235, 0.5)',
                     borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
