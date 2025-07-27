@@ -14,10 +14,11 @@ The goal of this simulation is to model the complex web of picto effects — Ene
 
 <h2>Key Findings</h2>
 <ul>
-  <li>The average number of shots for a sample size of 1 million turns is 23.11 shots.</li>
+  <li>The average number of shots for a sample size of 1 million turns is 23.1 shots.</li>
   <li>There's only a #% chance of getting 30 shots or higher.</li>
   <li>The highest number of shots I saw was 80, with a 0.0001% chance of occuring.</li>
   <li>Certain pictos like Beneficial Contamination aren't as impactful as they seem like they'd be because they usually trigger while you're AP is high and would have already maxed out at 9.</li>
+  <li>The more pictos you add, the less impactful each new one becomes. Energy Master and Energising Shots are doing most of the work.</li>
 </ul>
 
 <h2>🛠️ How It Works</h2>
