@@ -224,6 +224,6 @@ const probabilityDistribution = calculateProbability(results);
 //Objective 4: Probability Distribution Data Visualization
 const probabilityLabels = Object.keys(probabilityDistribution);
 const probabilityData = Object.values(probabilityDistribution);
-console.log(probabilityLabels);
-console.log(probabilityData);
+//console.log(probabilityLabels);
+//console.log(probabilityData);
 
