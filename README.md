@@ -20,6 +20,7 @@ The goal of this simulation is to model the complex web of picto effects and det
   <li>The highest number of shots I saw was 80, with a 0.0001% chance of occuring.</li>
   <li>The most impactful pictos were  Energising Shots and Energy Master. Disabling them led to a 35.1% and 20% decrease in average shot count, respectively.</li>
   <li>Beneficial Contamination is the least impactful because it usually triggers while you're AP is high and another boost was already going to max out your AP.</li>
+  <li>There's a 99.58% chance of getting 10 or more shots with 2 AP remaining. This means you're essentially guaranteed to get the maximum damage boost of +500% on Verso's skill Follow Up.</li> 
   <li>The more pictos you add, the less impactful each new one becomes.</li>
 </ul>
 
@@ -87,8 +88,9 @@ Sample Size: 1000000. Average shots: 23.101594
   
 <h2>📦 Files</h2>
 <ul>
-  <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/FreeAimShot.js">FreeAimShot.js</a> – Core simulation logic</li>
   <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/README.md">README.md</a> – You're here!</li>
+  <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/FreeAimShot.js">FreeAimShot.js</a> – Core algorithm that ends the turn on reaching 0 AP</li>
+  <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/FreeAimShotTwoRemaining.js">FreeAimShotTwoRemaining.js</a> – Modified algorithm that ends the turn on reaching 2 AP</li>
   <li><a href="https://goforryan.github.io/expedition33freeaimshot/DataVisualization.html">Data Visualization</a> - Visual of Probability Distribution</li>
   <li><a href="https://github.com/goforryan/expedition33freeaimshot/blob/main/DataVisualization.html">DataVisualization.html</a> - Data Visualization Source Code</li>
 </ul>
