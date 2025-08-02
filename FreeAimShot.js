@@ -39,7 +39,7 @@ function MachineGun() {
 
     //console.log("START LOOP");
 
-    //starts firing. Every occurence of loop is one shot
+    //starts firing. Every occurence of the loop is one shot
     for (; AP > 0;) {
         shotCounter += 1;
         statusEffectsThisShot = 0;
@@ -187,7 +187,6 @@ averageOutputsByLength(1000); //Sample Size of 1,000
 averageOutputsByLength(10000); //Sample Size of 10,000
 averageOutputsByLength(100000); //Sample Size of 100,000
 averageOutputsByLength(1000000); //Sample Size of 1,000,000
-
 
 //Objective 3: Calculate the probability distribution of a given number of shots occuring based on the sample data.
 function calculateProbability(results) {
