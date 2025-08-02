@@ -1,7 +1,7 @@
 <h1>I simulated 1 Million Free Aim turns to find out how many shots you really can get in Expedition 33.</h1>
 
 <h2>Purpose</h2>
-One of the best builds in Expedition 33 is the free aim shot or machine build, where you fire as many energy shots as possible in a single turn. I've seen some debate online about how many free aim shots are possible in an average turn. To settle the debate once and for all, I created an algorithm in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns. 
+One of the best builds in Expedition 33 is the free aim shot or machine build, where you fire as many energy shots as you can in a single turn. I've seen some debate online about how many free aim shots are possible in an average turn. To settle the debate once and for all, I created an algorithm in JavaScript that replicates every interaction — Energised, Marking, Rush, etc. Then I ran it over 1 million turns. 
 
 The goal of this simulation is to model the complex web of picto effects and determine:
 
